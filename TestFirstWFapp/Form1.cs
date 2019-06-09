@@ -17,6 +17,11 @@ namespace TestFirstWFapp
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             if(button1.BackColor != Color.Green)
@@ -36,9 +41,14 @@ namespace TestFirstWFapp
             form2.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.Black;
+            label1.Text = "";
+        }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/pavel-samsonenka/");
         }
     }
 }
