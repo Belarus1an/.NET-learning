@@ -50,5 +50,23 @@ namespace TestFirstWFapp
         {
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/pavel-samsonenka/");
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            label1.Text = textBox1.Text;
+            textBox1.Text = "";
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                label2.Text = "I like Java!";
+            }
+            else
+            {
+                label2.Text = "I like C#!";
+            }
+        }
     }
 }
